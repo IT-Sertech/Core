@@ -17,14 +17,14 @@ abstract class Dashboard extends Controller {
      * @var array|string[]
      */
     public array $chars = [
-        'ö', 'ä', 'ü', 'ß', 'Ö', 'Ä', 'Ü', '&', '/', '  ', ' ', '_', '#', '.', '---'
+        'ö', 'ä', 'ü', 'ß', 'Ö', 'Ä', 'Ü', '&', '/', '  ', ' ', '_', '#', '.', '---', ':'
     ];
 
     /**
      * @var array|string[]
      */
     public array $replaceChars = [
-        'oe', 'ae', 'ue', 'ss', 'Oe', 'Ae', 'Ue', '', '', '-' , '-', '-', '-', '-', '-'
+        'oe', 'ae', 'ue', 'ss', 'Oe', 'Ae', 'Ue', '', '', '-' , '-', '-', '-', '-', '-', ''
     ];
 
     /**

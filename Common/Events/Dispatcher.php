@@ -2,7 +2,7 @@
 
 /**
  * @author Sergey Tevs
- * @email tevs.sergey@gmail.com
+ * @email sergey@tevs.org
  */
 
 namespace Core\Common\Events;

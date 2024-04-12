@@ -2,7 +2,7 @@
 
 /**
  * @author Sergey Tevs
- * @email tevs.sergey@gmail.com
+ * @email sergey@tevs.org
  */
 
 namespace Core\Utils;
@@ -19,7 +19,8 @@ class Curl {
     /**
      * @var string
      */
-    protected static string $userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36';
+    protected static string $userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) '.
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36';
 
     /**
      * @var int
@@ -184,10 +185,6 @@ class Curl {
             throw new Exception('Max redirections reached trying to get: ' . $url);
         }
         return trim($location[1]);
-    }
-
-    public static function setHeader(array $headers = []){
-
     }
 
 }

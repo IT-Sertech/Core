@@ -2,11 +2,12 @@
 
 /**
  * @author Sergey Tevs
- * @email tevs.sergey@gmail.com
+ * @email sergey@tevs.org
  */
 
 namespace Core;
 
+use Config\Modules;
 use Core\Config\Config;
 use Core\Events\Dispatcher;
 use Core\Factory\ContainerFactory;
@@ -132,10 +133,7 @@ class Application {
     }
 
     public function registry(): Generator {
-        $contents = require sprintf(
-            '%s/config/modules.php',
-            $this->getProjectDir()
-        );
+        $contents = Modules::getModules();
         return $this->generator($contents);
     }
 

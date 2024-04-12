@@ -1,1 +1,1 @@
-# Core
+# SkeletonApp Core

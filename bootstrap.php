@@ -1,4 +1,5 @@
 <?php
+
 use Core\Application;
 
 require_once '../vendor/autoload.php';
@@ -7,7 +8,7 @@ ini_set('display_errors', 0);
 
 date_default_timezone_set('Europe/Berlin');
 
-header('Access-Control-Allow-Origin: *.example.de');
+header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Requested-With, XMLHttpRequest');
 header('Access-Control-Allow-Methods: POST, GET, PUT, DELETE');
@@ -22,7 +23,7 @@ header($headerCSP);
 header("Strict-Transport-Security: max-age=600");
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: same-origin');
-header('Permissions-Policy: geolocation=(self "https://www.example.de/"), microphone=()');
+header('Permissions-Policy: geolocation=(self "https://www.example.com/"), microphone=()');
 header("X-Frame-Options: SAMEORIGIN");
 header("X-XSS-Protection: 1; mode=block");
 

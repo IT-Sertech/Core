@@ -1,0 +1,22 @@
+{
+  "name": "skeleton-app/core",
+  "description": "SkeletonApp Core",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Tevs",
+      "homepage": "https://www.tevs.org",
+      "email": "sergey@tevs.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core/"
+    }
+  }
+}

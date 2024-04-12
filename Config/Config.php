@@ -2,7 +2,7 @@
 
 /**
  * @author Sergey Tevs
- * @email tevs.sergey@gmail.com
+ * @email sergey@tevs.org
  */
 
 namespace Core\Config;
@@ -42,7 +42,8 @@ class Config implements \ArrayAccess, \Iterator, \Countable {
         self::EXTENSION => ['.', '..', ''],
         self::FILE => [
             'headers.php',
-            'modules.php'
+            'modules.php',
+            'Modules.php'
         ]
     ];
 
@@ -311,11 +312,4 @@ class Config implements \ArrayAccess, \Iterator, \Countable {
         return count($this->settings);
     }
 
-    /**
-     * @param string $name
-     * @return mixed
-     */
-    public function __get(string $name) :mixed {
-        return (isset($this->settings[$name]))?$this->settings[$name]:false;
-    }
 }
